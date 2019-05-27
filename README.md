@@ -1,4 +1,4 @@
-## Anaysis retrocopy using Hic data
+## Anaysis retrocopy using Hi-c data
 
 #### Dependence of R package:  
 	

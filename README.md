@@ -4,9 +4,9 @@
 	
 	GenomicInteractions;  
 	rtracklayer  
-#### Normalize the raw contact matrices at 250 kb using the normalization vectors derived by the Knight-Ruiz matrix balancing algorithm and produce strict or permissive datasets of contact maps that contained the top 10% or 50% normalized Hi-C contact pairs.
+#### 0. Normalize the raw contact matrices at 250 kb using the normalization vectors derived by the Knight-Ruiz matrix balancing algorithm and produce strict or permissive datasets of contact maps that contained the top 10% or 50% normalized Hi-C contact pairs.
      ./1hicdataprocessed
-#### 1.Calculate the proportions of parent-retrocopy pairs that are spatially colocalized based on the interacting chromatin contact maps.
+#### 1. Calculate the proportions of parent-retrocopy pairs that are spatially colocalized based on the interacting chromatin contact maps.
     library("GenomicInteractions")
     HRPPairs <- read.table("./HRPPairs") #### HRPPairs: Information of retrocopies and parental genes in human genome
     source("./5countnum.R")
@@ -14,7 +14,7 @@
     countnum(HRPPairs,inter250kb_TOP50_NHEK)
     load("./inter250kb_TOP10_NHEK.RData")
     countnum(HRPPairs,inter250kb_TOP10_NHEK)
-#### 2.Assess the statistical significance of interchromosomal colocalization of parent-retrocopy pairs, we performed simulation analysis according to two null models.
+#### 2. Assess the statistical significance of interchromosomal colocalization of parent-retrocopy pairs, we performed simulation analysis according to two null models.
     library(GenomicInteractions)
     library(rtracklayer)
     chrm_sizes <- read.table("./human_chr_sizes")

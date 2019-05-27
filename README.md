@@ -1,6 +1,6 @@
 ## Anaysis retrocopy using Hi-c data
 
-#### Dependence of R package:  
+#### **Dependence of R package:**  
 	
 	GenomicInteractions;  
 	rtracklayer  

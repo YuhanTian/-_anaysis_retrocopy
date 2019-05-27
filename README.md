@@ -1,15 +1,10 @@
 ## Anaysis retrocopy using Hic data
 
-## **Dependence of R package:**  
+##Dependence of R package:  
 	
-	optparse;  
-	e1071;  
-	randomForest;  
-	bamsignals;  
-	GenomicFeatures;  
-
-
-### Normalize the raw contact matrices at 250 kb using the normalization vectors derived by the Knight-Ruiz matrix balancing algorithm and produce strict or permissive datasets of contact maps that contained the top 10% or 50% normalized Hi-C contact pairs.
+	GenomicInteractions;  
+	rtracklayer  
+###Normalize the raw contact matrices at 250 kb using the normalization vectors derived by the Knight-Ruiz matrix balancing algorithm and produce strict or permissive datasets of contact maps that contained the top 10% or 50% normalized Hi-C contact pairs.
     ./1hicdataprocessed 
 
 ### Calculate the proportions of parent-retrocopy pairs that are spatially colocalized based on the interacting chromatin contact maps.
